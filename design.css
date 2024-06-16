@@ -12,16 +12,39 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
     box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
 }
 
-#initImage{
+.initImage{
     width: 100%;
     height: 100%;
+    position: absolute;
     object-fit: cover;
 }
 
+.profileImage{
+    width: 40%;
+    aspect-ratio: 1;
+    position: absolute;
+    clip-path: circle(50%); /*Recorta la imagen para que el area de colision sea la deseada*/
+    
+}
+.profileImage:hover{
+    opacity: 0;
+}
 
+.profileLogo{
+    width: 40%;
+    aspect-ratio: 1;
+    position: absolute;
+    clip-path: circle(50%); /*Recorta la imagen para que el area de colision sea la deseada*/
+    opacity: 0;
+    
+}
+.profileLogo:hover{
+    opacity: 100;
+}
 
 .normalSection{
     height: 50vh;
