@@ -1,0 +1,28 @@
+/*CSS general de la página web*/
+
+body{
+    margin: 0;
+}
+
+#init{
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
+}
+
+#initImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.normalSection{
+    height: 50vh;
+}
