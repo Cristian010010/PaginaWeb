@@ -4,6 +4,28 @@ body{
     margin: 0;
 }
 
+/*Logo introductorio*/
+
+#initialLogo{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Logo{
+    height: 60vh;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+/*-----------------------------------------*/
+
 /*Modificador general de secciones */
 
 #barraSuperior{
@@ -21,7 +43,7 @@ body{
     justify-content: space-evenly;
     box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
     position: fixed;
-    z-index: 1000; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
+    z-index: 500; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
 }
 
 #DescriptionButton{
