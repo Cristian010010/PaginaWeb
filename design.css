@@ -18,11 +18,27 @@ body{
     justify-content: center;
     align-items: center;
 }
-#Logo{
-    height: 60vh;
-    opacity: 0;
-    transition: opacity 1s ease;
+
+@media (max-width: 600px) {
+    #Logo{
+        height: auto;
+        width: 60vw;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
 }
+
+/* Estilos para pantallas más grandes (por ejemplo, anchura mínima de 601px) */
+@media (min-width: 601px) {
+    #Logo{
+        height: 60vh;
+        width: auto;
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+}
+
+
 
 /*-----------------------------------------*/
 
