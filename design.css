@@ -149,24 +149,89 @@ body{
 
 /*-----------------------------------------*/
 
+/*Sección de animaciones*/
+
+#AnimationWindow{
+    height: 50vh;
+    box-sizing: border-box;
+    background: rgb(104, 254, 249);
+}
+
+/*-----------------------------------------*/
+
 /*Sección de contacto*/
 
 #ContactSection{
     box-sizing: border-box;
     background: rgb(246, 104, 254);
-    pointer-events: none;
+    height: 80vh;
+    width: 100%;
+    left: 0;
+    transition: top 1s ease;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 100;
 }
 
         /* Ocultar sección */
 .oculto{
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
+    pointer-events: none; /*Cuidado! Esto hace que no se detecte nada de lo que suceda dentro*/
+    top: -80vh;
 }
 
 .visible{
-    height: 50vh;
-    opacity: 1;
+    pointer-events: auto;
+    top: 10vh;
 }
+
+.CloseButton{
+    align-self: flex-start;
+    margin-right: 10px;
+    width: 30px; /* Ancho deseado del botón */
+    height: 30px; /* Altura deseada del botón */
+}
+
+/*-----------------------------------------*/
+
+/*Espacio de la galería*/
+
+#EmptyWindow{
+    height: 110vh; /*La altura podemos cambiarla segun necesitemos*/
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    pointer-events: none;
+}
+
+
+/*-----------------------------------------*/
+
+/*Galeria de videojuegos*/
+
+#Gallery{
+    height: 200vh; /*La altura podemos cambiarla segun necesitemos*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: gray;
+    display: flex;
+    z-index: -500;
+}
+
+.HiddenGallery{
+    position: fixed;
+    pointer-events: none;
+}
+
+.OpenedGallery{
+    position: sticky;
+    pointer-events: auto;
+}
+
 
 /*-----------------------------------------*/
