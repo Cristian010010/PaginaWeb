@@ -140,3 +140,9 @@ function ContactClose() {
     ContactSection.classList.remove('visible');
     ContactSection.classList.add('oculto');
 }
+
+//Menú del robot
+
+function RobotMenu() {
+    console.log("Doy al roobot");
+}

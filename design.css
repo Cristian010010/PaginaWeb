@@ -235,3 +235,28 @@ body{
 
 
 /*-----------------------------------------*/
+
+/*Robot de soporte al usuario*/
+
+#RobotPosition {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Alinea la imagen en la parte superior */
+    pointer-events: none;
+}
+
+#Robot {
+    height: 15vh;
+    width: auto;
+    margin-top: 80px;
+    margin-right: 40px;
+    z-index: 20; /* Capa encima de otros elementos */
+    pointer-events: auto;
+}
+
+/*-----------------------------------------*/
