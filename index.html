@@ -8,11 +8,11 @@
 </head>
 <body>
     <section id = "initialLogo">
-        <img src="pictures/RefLogo.jpg" id = "Logo">
+        <img src="pictures/Logo.png" id = "Logo">
     </section>
     <section id="sectionContainer">
         <section id="barraSuperior">
-            <img src="pictures/RefLogo.jpg">
+            <img src="pictures/Logo.png">
             <section id="Buttons">
                 <a href="#ContactSection" id="ContactButton">Contact</a>
                 <a onclick="descargarArchivo()">CV</a>
@@ -20,9 +20,18 @@
         </section>
         
         <section id="init">
-            <img src="pictures/FondoInicioPrueba.jpg" class = "initImage">
-            <img src="pictures/WhiteCircle.png" class = "profileImage">
-            <img src="pictures/BlackCircle.png" class = "profileLogo">
+            <section id="PhotoSection">
+                <img src="pictures/Me.png" id="Photo">
+            </section>
+            <section id="DescriptionSection">
+                <p>Hola! Mi nombre es Cristian, soy principalmente<br>
+                    modelador 3D pero realmente poseo un perfil<br>
+                    generailsta, que he trabajado como programador<br>
+                    en varios videojuegos tanto para Web como para PC.<br>
+                    Poseo conocimientos avanzados de varios lenguajes<br>
+                    de programación, encantado de conocerte!</p>
+            </section>
+            
         </section>
         <section id="Description">
 
@@ -50,13 +59,14 @@
             <img src="pictures/close.png" alt="Close" class="CloseButton" onclick="ContactClose()">
         </section>
         <section id="RobotPosition">
-            <img src="pictures/robot.png" alt="Support" id="Robot" onclick="RobotMenu()">
+            <section id="Robot" onclick="RobotMenu()"></section>
         </section>
         
     </section>
 
     <!-- JavaScript externos -->
     <script src="animations.js"></script>
+    <script src="robotMovement.js"></script>
 
 </body>
 </html>
