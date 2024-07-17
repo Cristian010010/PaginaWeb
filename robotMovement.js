@@ -1,16 +1,44 @@
-// Movimiento del robot
 
 const images = [
-    'robot/1.png',
-    'robot/2.png',
-    'robot/3.png',
-    'robot/4.png',
+  'robot/1.png',
+  'robot/2.png',
+  'robot/3.png',
+  'robot/4.png',
+  'robot/HeadRobot.png'
 ];
 
 const RobotBox = document.getElementById('Robot');
 let currentIndex = 0;
+let computerVersion = true;
+
+
+
+
+
+// Detecta si el navegador está en modo escritorio
+
+function ComputerVersionCheck() {
+  if (window.matchMedia("(min-width: 800px)").matches) {
+    computerVersion = true;
+  }
+  else{
+    computerVersion = false;
+  }
+}
+
+// Llama a la función al cargar la página
+ComputerVersionCheck();
+
+// Añade un event listener para detectar cambios en el tamaño de la ventana
+window.addEventListener('resize', ComputerVersionCheck);
+
+
 
 RobotEyesOpened();
+
+
+
+// Movimiento del robot
 
 function RobotEyesOpened() {
     SpriteUpdate(0);
@@ -56,7 +84,12 @@ function Greet(){ //Saludo
 }
 
 function SpriteUpdate(i){
+  if(computerVersion){
     RobotBox.style.backgroundImage = `url('${images[i]}')`;
+  }
+  else{
+    RobotBox.style.backgroundImage = `url('${images[4]}')`;
+  }
 }
 
 
