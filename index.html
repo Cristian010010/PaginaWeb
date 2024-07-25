@@ -31,13 +31,31 @@
                     Poseo conocimientos avanzados de varios lenguajes
                     de programación, encantado de conocerte!</p>
             </section>
-            
+
         </section>
         <section id="Description">
-
+            Description
         </section>
         <section id="AnimationWindow">
+            <section class="logos">
+                <!-- Ponemos 2 secciones para que al acabar una no se corte y se reinicie la animacion, sino que sale la siguienre y da un efecto de infinito-->
+                <!-- NOTA: Si las imágenes no cubren toda la pantalla con 2 vueltas habría que poner mas, sino va a salir un espacio vacío y eso no queremos-->
+                <section class="logos-slide">
+                    <img src="Content/Animations/Images/Bolera.png" alt="Bolera" onclick="Animations(0)">
+                    <img src="Content/Animations/Images/LastBorder.png" alt="LastBorder" onclick="Animations(1)">
+                    <img src="Content/Animations/Images/Aros.png" alt="Aros" onclick="Animations(2)">
+                    <img src="Content/Animations/Images/Teatro.png" alt="Teatro" onclick="Animations(3)">
+                    <img src="https://via.placeholder.com/200x150?text=Image+5" alt="Image 5">
+                </section>
 
+                <section class="logos-slide">
+                    <img src="Content/Animations/Images/Bolera.png" alt="Bolera" onclick="Animations(0)">
+                    <img src="Content/Animations/Images/LastBorder.png" alt="LastBorder" onclick="Animations(1)">
+                    <img src="Content/Animations/Images/Aros.png" alt="Aros" onclick="Animations(2)">
+                    <img src="Content/Animations/Images/Teatro.png" alt="Teatro" onclick="Animations(3)">
+                    <img src="https://via.placeholder.com/200x150?text=Image+5" alt="Image 5">
+                </section>
+              </section>
         </section>
         <section id="EmptyWindow">
 
@@ -58,15 +76,23 @@
             Seccion de contacto
             <img src="pictures/close.png" alt="Close" class="CloseButton" onclick="ContactClose()">
         </section>
+        <section id="MenuSection">
+            <img src="pictures/FondoMenu.png" id="BackMenu">
+        </section>
         <section id="RobotPosition">
             <section id="Robot" onclick="RobotMenu()"></section>
         </section>
+        <section id="Checker" onclick="IsTouching()">
+            <!-- Para comprobar si funciona correctamente todas las pulsaciones -->
+        </section>
+        <section id="overlay"></section> <!--Oscurecer la pantalla cuando se reproduzca un vídeo-->
         
     </section>
 
     <!-- JavaScript externos -->
-    <script src="animations.js"></script>
+    <script src="generalBehaviour.js"></script>
     <script src="robotMovement.js"></script>
+    <script src="AnimationsSection.js"></script>
 
 </body>
 </html>

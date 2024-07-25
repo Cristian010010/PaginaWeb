@@ -8,6 +8,7 @@ const images = [
 ];
 
 const RobotBox = document.getElementById('Robot');
+const BackMenu = document.getElementById('BackMenu');
 let currentIndex = 0;
 let computerVersion = true;
 
@@ -91,6 +92,43 @@ function SpriteUpdate(i){
     RobotBox.style.backgroundImage = `url('${images[4]}')`;
   }
 }
+
+
+
+
+
+//Menú del robot, se llama directamente desde el index
+
+function RobotMenu() {
+  if(BackMenu.style.opacity == 0){
+    BackMenu.classList.add('scaleAnimation');
+    BackMenu.style.opacity = 1;
+    BackMenu.classList.add('Visible');
+    BackMenu.classList.remove('Oculto');
+  }
+  else{
+    BackMenu.classList.remove('scaleAnimation');
+    BackMenu.style.opacity = 0;
+    BackMenu.classList.add('Oculto');
+    BackMenu.classList.remove('Visible');
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
