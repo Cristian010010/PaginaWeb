@@ -57,7 +57,7 @@
     #barraSuperior{
         width: 100vw;
         height: 70px;
-        background: rgb(104, 103, 93);
+        background: rgb(104, 103, 93, 0); /*SE HA OCULTADO LA BARRA PARA HACER PRUEBAS*/
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -320,7 +320,10 @@
         box-sizing: border-box;
         background: gray;
         display: flex;
+        justify-content: center;
+        align-items: center;
         z-index: -500;
+        overflow: auto;
     }
 
     .HiddenGallery{
@@ -333,6 +336,26 @@
         pointer-events: auto;
     }
 
+    /* Contenedor de fondo dentro de la galería */
+    #BackGallery {
+        background-color: red;
+        width: 90%;
+        height: 90%;
+        display:flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+
+    /* Sección para mostrar un videojuego */
+    .VideogameSection {
+        width: 150px;
+        height: 200px;
+        background-color: pink;
+        box-sizing: border-box;
+    }
 
     /*-----------------------------------------*/
 
