@@ -13,6 +13,7 @@
 
     body{
         margin: 0;
+        width: 100%;
     }
 
     /*Logo introductorio*/
@@ -44,7 +45,7 @@
     /*Modificador general de secciones */
 
     #sectionContainer{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
 
@@ -249,8 +250,8 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
         z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
@@ -264,7 +265,7 @@
         box-sizing: border-box;
         background: rgb(246, 104, 254);
         height: 80vh;
-        width: 100%;
+        width: 100vw;
         left: 0;
         transition: top 1s ease;
         position: fixed;
@@ -341,7 +342,7 @@
         top: 0;
         left: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         display: flex;
         justify-content: flex-end;
@@ -416,7 +417,7 @@
         top: 0;
         left: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         display: flex;
         position: fixed;
         justify-content: center;
@@ -462,6 +463,7 @@
 
     body{
         margin: 0;
+        width: 100%;
     }
 
     /*Logo introductorio*/
@@ -493,7 +495,7 @@
     /*Modificador general de secciones */
 
     #sectionContainer{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
 
@@ -636,11 +638,13 @@
 
     .logos:before {
         left: 0;
+        background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0), rgba(104, 254, 249, 1));
         background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(104, 254, 249));
     }
 
     .logos:after {
         right: 0;
+        background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0), rgba(104, 254, 249, 1));
         background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(104, 254, 249));
     }
 
@@ -695,7 +699,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
         z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
