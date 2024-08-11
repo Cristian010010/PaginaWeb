@@ -465,28 +465,28 @@
     }
 
     #Mask1{
-        mask-image: url('/pictures/Masks/Border1.png');
+        mask-image: url('Border1.png');
         mask-size: cover;
         mask-repeat: no-repeat;
-        -webkit-mask-image: url('/pictures/Masks/Border1.png');
+        -webkit-mask-image: url('Border1.png');
         -webkit-mask-size: cover;
         -webkit-mask-repeat: no-repeat;
     }
 
     #Mask2{
-        mask-image: url('/pictures/Masks/Border2.png');
+        mask-image: url('Border2.png');
         mask-size: cover;
         mask-repeat: no-repeat;
-        -webkit-mask-image: url('/pictures/Masks/Border2.png');
+        -webkit-mask-image: url('Border2.png');
         -webkit-mask-size: cover;
         -webkit-mask-repeat: no-repeat;
     }
 
     #Mask3{
-        mask-image: url('/pictures/Masks/Border3.png');
+        mask-image: url('Border3.png');
         mask-size: cover;
         mask-repeat: no-repeat;
-        -webkit-mask-image: url('/pictures/Masks/Border3.png');
+        -webkit-mask-image: url('Border3.png');
         -webkit-mask-size: cover;
         -webkit-mask-repeat: no-repeat;
     }
