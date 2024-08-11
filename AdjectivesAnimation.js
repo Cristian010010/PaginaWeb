@@ -2,7 +2,7 @@ let interval = null;
 
 // Función que solo se ejecutará en dispositivos móviles
 function executeMobileJS() {
-  if (window.matchMedia("(min-width: 801px)").matches) {
+  if (window.matchMedia("(min-width: 1px)").matches) {
 
     if (!interval) {
       animation();
@@ -50,7 +50,7 @@ function animation() {
           setTimeout(() => {
 
               interval = setInterval(() => {
-                  AdjectivesContainer.innerHTML = "";
+                  AdjectivesContainer.innerHTML = "> ";
                   LetterCount--;
                   animationText[ArrayPosition].pop();
                   animationText[ArrayPosition].forEach((element) => {
