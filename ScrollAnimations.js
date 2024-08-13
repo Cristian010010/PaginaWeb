@@ -1,3 +1,5 @@
+//Funcion correspondiente a imagenes
+
 document.addEventListener("DOMContentLoaded", function() {
     // Seleccionar los elementos por sus IDs
     const animatedSections = [

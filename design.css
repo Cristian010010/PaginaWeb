@@ -822,6 +822,16 @@
         pointer-events: auto;
     }
 
+    .TextReader span {
+        display: inline-block;
+        opacity: 0.5; /* Inicialmente, los caracteres son invisibles */
+        transition: opacity 0.3s ease;
+    }
+    
+    .TextReader span.read {
+        opacity: 1;
+    }
+
     /*-----------------------------------------*/
 }
 
@@ -1620,6 +1630,16 @@
 
     .Visible{
         pointer-events: auto;
+    }
+
+    .TextReader span {
+        display: inline-block;
+        opacity: 0.5; /* Inicialmente, los caracteres son invisibles */
+        transition: opacity 0.3s ease;
+    }
+    
+    .TextReader span.read {
+        opacity: 1;
     }
 
     /*-----------------------------------------*/
