@@ -41,7 +41,7 @@
 
 
 /*Página web para ordenador 801*/
-@media (min-width: 1px) {
+@media (min-width: 801px) {
 
 
     ::-webkit-scrollbar {
@@ -317,13 +317,17 @@
         justify-content: center;
     }
 
-    #IntroImage{
+    #IntroImageComputer{
         height: 100%;
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+    }
+
+    #IntroImageMobile{
+        display: none;
     }
 
     #ArrowImages{
@@ -413,10 +417,10 @@
         background: rgb(232, 232, 232);
         display: flex;
         box-sizing: border-box;
+        padding-top: 4vw;
         align-items: start;
         justify-content: center;
         position: relative;
-        padding-top: 8vw;
     }
 
     #ModelExplorator{
@@ -426,6 +430,8 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        transform: translateY(20vw); /* Inicia más abajo */
+        will-change: transform;
     }
 
     #AnimExplorator{
@@ -436,6 +442,8 @@
         justify-content: center;
         margin-top: 10vw;
         position: relative;
+        transform: translateY(20vh); /* Inicia más abajo */
+        will-change: transform;
     }
 
     #GamesExplorator{
@@ -446,6 +454,8 @@
         justify-content: center;
         margin-top: 20vw;
         position: relative;
+        transform: translateY(20vh); /* Inicia más abajo */
+        will-change: transform;
     }
 
     .ExploratorText{
@@ -453,7 +463,7 @@
         bottom: 0;
         left:0;
         padding-left: 3%;
-        padding-bottom: 3%;
+        padding-bottom: 2.5%;
         font-size: 2vw;
         font-family: 'Titulo', Arial, sans-serif;
         color:#151518
@@ -829,8 +839,8 @@
 
 
 /*Pagina web para movil*/
-@media (max-width: 0px) {
-        /*CSS general de la página web*/
+@media (max-width: 800px) {
+    /*CSS general de la página web*/
 
 
     ::-webkit-scrollbar {
@@ -842,6 +852,8 @@
         padding: 0;
         box-sizing: border-box;
     }
+
+    /*CSS general de la página web*/
 
     body{
         margin: 0;
@@ -857,7 +869,7 @@
         width: 100vw;
         height: 100vh;
         position: fixed;
-        background-color: black;
+        background-color: #151518;
         z-index: 1000;
         opacity: 1;
         transition: opacity 2s ease;
@@ -867,8 +879,8 @@
     }
 
     #Logo{
-        height: auto;
-        width: 60vw;
+        width: 90vw;
+        max-width: 90vh;
         opacity: 0;
         transition: opacity 1s ease;
     }
@@ -892,16 +904,21 @@
 
     #barraSuperior{
         width: 100vw;
-        height: 60px;
+        height: 10vh;
+        top: 0;
+        background: rgb(104, 103, 93, 0); /*SE HA OCULTADO LA BARRA PARA HACER PRUEBAS*/
         display: flex;
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
         position: fixed;
-        padding: 0 20px;
+        padding: 0 2vw;
         z-index: 500; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
-        filter: drop-shadow(0px 0px 3px rgb(28, 27, 32));
+        filter: drop-shadow(0px 0px 0.4vh rgb(28, 27, 32));
+        transition: top 0.3s;
     }
+
+    
 
     #barraSuperior img{
         height: 80%;
@@ -913,16 +930,17 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content:end;
+        justify-content: space-between;
         box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
         position: relative;
+        
     }
 
     #Buttons img{
         height: 50%;
         display: flex;
         align-items: center;
-        margin: 0px 5px;
+        margin: 0px 10px;
         cursor: pointer;
     }
 
@@ -933,13 +951,13 @@
     /*Codigo variable*/
 
     #FirstSlide{
-        top: 570px;
+        top: 90vh;
         left: 50%;
         transform: translateX(-50%) rotate(3deg);
     }
 
     #SecondSlide{
-        top: 530px;
+        top: 81vh;
         left: 50%;
         transform: translateX(-50%) rotate(-3deg);
     }
@@ -956,8 +974,8 @@
         position: absolute;
         background-color: rgb(28, 27, 32);
         width: 110%;
-        height: 40px; /* Ajusta según el tamaño de tu contenido */
-        z-index: 1;
+        height: 7vh; /* Ajusta según el tamaño de tu contenido */
+        z-index: 3;
         display: flex;
         align-items: center; /* Centra verticalmente el contenido */
         font-family: 'Titulo', Arial, sans-serif;
@@ -970,17 +988,16 @@
         width: 100%;
         height: 20%;
         content: "";
-        z-index: 2;
     }
 
     .CustomSlides:before {
         top: 5px;
-        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(104, 254, 249));
+        background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(232, 232, 232));
     }
 
     .CustomSlides:after {
         bottom: 5px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(104, 254, 249));
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(232, 232, 232));
     }
 
     .SlideToLeft{
@@ -991,7 +1008,7 @@
         white-space: nowrap;
         align-items: center;
         position: relative;
-        font-size: 15px;
+        font-size: 3vh;
         height: 100%;
     }
 
@@ -1003,7 +1020,7 @@
         white-space: nowrap;
         align-items: center;
         position: relative;
-        font-size: 15px;
+        font-size: 3vh;
         height: 100%;
     }
 
@@ -1019,43 +1036,269 @@
     #PhotoSection{
         height: 100vh;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: relative;
     }
 
     #Photo{
-        height: 100%;
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
+    #PhotoSection:after {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        content: "";
+        z-index: 2;
+        background: linear-gradient(to top, rgb(232, 232, 232), rgb(232, 232, 232, 0));
+    }
 
     /*----------------------------------------*/
 
     /*Adjetivos*/
 
     .Adjectives {
-        display: none;
+        padding-top: 20vw;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 10vw;
+        background: rgb(232, 232, 232);
+        font-family: 'Titulo', Arial, sans-serif;
+        font-size: 7vw;
+        color: transparent;
+        -webkit-text-stroke: 0.2vw #151518; /* Prefijo para navegadores WebKit */
     }
 
-    /*----------------------------------------*/
+    .Adjectives__text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        padding-left: 2vw;
+    }
 
-    /*Sección de descripción*/
+    .Adjectives_container {
+        display: flex;
+    }
 
-    #Description{
-        height: 50vh;
-        box-sizing: border-box;
-        background: rgb(104, 254, 124);
+    .Adjectives_bar {
+        height: 13h;
+        margin-left: 0.5vw;
+        content: "/";
+        animation: animation-bar 1s steps(1) infinite;
+    }
+    
+    @keyframes animation-bar {
+        50% {
+            opacity: 0;
+        }
     }
 
     /*-----------------------------------------*/
 
-    /*Sección de proyectos*/
+    /*Intro*/
 
-    #Proyects{
-        height: 50vh;
+    #Intro{
+        padding-top: 20vw;
+        width: 100%;
+        background: rgb(232, 232, 232);
+        display: flex;
+        flex-direction: column;
         box-sizing: border-box;
-        background: rgb(246, 104, 254);
+        align-items: center;
+        justify-content: center;
+    }
+
+    #IntroImageMobile{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #IntroImageComputer{
+        display: none;
+    }
+
+    #ArrowImages{
+        padding-top: 20vw;
+        width: 10%;
+    }
+
+    .Arrows{
+        position: relative;
+        width: 100%;
+        animation: arrow-load 2s infinite;
+    }
+
+    .Arrows:nth-child(2){
+        bottom: 2vw;
+        animation-delay: 0.2s;
+    }
+
+    .Arrows:nth-child(3){
+        bottom: 4vw;
+        animation-delay: 0.4s;
+    }
+
+    @keyframes arrow-load {
+        0%{
+            opacity: 0;
+            transform: translate(0px, -2vh);
+        }
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+            transform: translate(0, 2vh);
+        }
+    }
+
+    #IntroText{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding: 0px 10vw;
+        font-size: 4vw;
+        line-height: 6vw;
+        color:#151518;
+        text-shadow: 0.4vw 0.4vw 0.2vw rgba(0, 0, 0, 0.2);
+    }
+
+    /*-----------------------------------------*/
+
+    /*Explorador de trabajo*/
+
+    #WorkExploratorTitle{
+        background: rgb(232, 232, 232);
+        width: 100%;
+        padding-top: 20vw;
+    }
+
+    #BlackTitle{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        padding-left: 5vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        font-size: 10vw;
+        color: #151518;
+        line-height: 0.7;
+    }
+
+    #TransparentTitle{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        padding-left: 5vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        font-size: 10vw;
+        color: transparent;
+        -webkit-text-stroke: 0.2vw #151518; /* Prefijo para navegadores WebKit */
+        line-height: 0.7;
+    }
+
+    #WorkExplorator{
+        width: 100%;
+        background: rgb(232, 232, 232);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-top: 10vw;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    #ModelExplorator{
+        width: 80%;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transform: translateY(20vw); /* Inicia más abajo */
+        will-change: transform;
+    }
+
+    #AnimExplorator{
+        width: 80%;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vw;
+        position: relative;
+        transform: translateY(20vh); /* Inicia más abajo */
+        will-change: transform;
+    }
+
+    #GamesExplorator{
+        width: 80%;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vw;
+        position: relative;
+        transform: translateY(20vh); /* Inicia más abajo */
+        will-change: transform;
+    }
+
+    .ExploratorText{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-left: 3%;
+        padding-bottom: 2.5%;
+        font-size: 4vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        color:#151518
+    }
+
+    .ExploratorVideo1{
+        width: 95%;
+        filter: grayscale(90%);
+    }
+
+    #Mask1{
+        mask-image: url('Border1.png');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        -webkit-mask-image: url('Border1.png');
+        -webkit-mask-size: cover;
+        -webkit-mask-repeat: no-repeat;
+    }
+
+    #Mask2{
+        mask-image: url('Border2.png');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        -webkit-mask-image: url('Border2.png');
+        -webkit-mask-size: cover;
+        -webkit-mask-repeat: no-repeat;
+    }
+
+    #Mask3{
+        mask-image: url('Border3.png');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        -webkit-mask-image: url('Border3.png');
+        -webkit-mask-size: cover;
+        -webkit-mask-repeat: no-repeat;
     }
 
     /*-----------------------------------------*/
@@ -1063,16 +1306,18 @@
     /*Sección de animaciones*/
 
     #AnimationWindow{
-        height: 25vh;
+        padding-top: 15vw;
+        padding-bottom: 10vw;
+        width: 100%;
         box-sizing: border-box;
-        background: rgb(104, 254, 249);
+        background: rgb(232, 232, 232);
         align-items: center;
         justify-content: center;
         display: flex;
     }
 
     .logos {
-        height: 20vh;
+        height: 100%;
         overflow: hidden;
         white-space: nowrap;
         position: relative;
@@ -1083,7 +1328,7 @@
     .logos:before, .logos:after {
         position: absolute;
         top: 0;
-        width: 50px;
+        width: 25vw;
         height: 100%;
         content: "";
         z-index: 2;
@@ -1091,14 +1336,12 @@
 
     .logos:before {
         left: 0;
-        background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0), rgb(232, 232, 232));
-        background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(104, 254, 249));
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(232, 232, 232));
     }
 
     .logos:after {
         right: 0;
-        background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0), rgb(232, 232, 232));
-        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(104, 254, 249));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(232, 232, 232));
     }
 
     .logos:hover .logos-slide {
@@ -1107,13 +1350,13 @@
 
     .logos-slide {
         display: inline-block;
-        animation: 15s slideLeft infinite linear;
+        animation: 35s slideLeft infinite linear;
         position: relative;
     }
 
     .logos-slide img {
-        height: 100px; /*Tamaño de la imagen*/
-        margin: 0 10px;
+        width: 30vw; /*Tamaño de la imagen*/
+        margin: 0 2vw;
         transition: transform 0.3s ease; /* Smooth scaling effect */
         object-fit: cover;
     }
@@ -1142,8 +1385,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
-        height: auto;
+        height: 80%;
+        width: auto;
     }
 
     /* Overlay para oscurecer el resto de la página */
@@ -1151,7 +1394,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
@@ -1164,23 +1407,23 @@
 
     #ContactSection{
         box-sizing: border-box;
-        background: rgb(246, 104, 254);
+        background: rgb(232, 232, 232);
         height: 80vh;
-        width: 100%;
+        width: 100vw;
         left: 0;
         transition: top 1s ease;
         position: fixed;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 20px;
+        justify-content: end;
+        align-items: start;
         z-index: 100;
+        box-shadow: 0 0 2vh rgba(0, 0, 0, 1);
     }
 
-    /* Ocultar sección */
+            /* Ocultar sección */
     .ContactoOculto{
         pointer-events: none; /*Cuidado! Esto hace que no se detecte nada de lo que suceda dentro*/
-        top: -80vh;
+        top: -90vh;
     }
 
     .ContactoVisible{
@@ -1189,10 +1432,12 @@
     }
 
     .CloseButton{
-        align-self: flex-start;
-        margin-right: 10px;
-        width: 30px; /* Ancho deseado del botón */
-        height: 30px; /* Altura deseada del botón */
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        margin-right: 1vw;
+        margin-top: 1vw;
+        width: 4vh; /* Ancho deseado del botón */
     }
 
     /*-----------------------------------------*/
@@ -1206,7 +1451,21 @@
         background-color: rgba(255, 255, 255, 0);
         display: flex;
         pointer-events: none;
+        position: relative;
     }
+
+    /*
+    #EmptyWindow:before {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 10%;
+        content: "";
+        z-index: 2;
+        background: linear-gradient(to bottom, rgb(232, 232, 232), rgb(232, 232, 232, 0));
+    }
+
+    */
 
 
     /*-----------------------------------------*/
@@ -1219,7 +1478,7 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-        background: gray;
+        background: #151518;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -1244,19 +1503,17 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        gap: 20px;
-        margin-top: 15vh;
+        gap: 2vw;
+        margin-top: 15vw;
     }
 
     /* Sección para mostrar un videojuego */
     .VideogameSection {
-        width: 75px;
-        height: 100px;
-        background-color: pink;
-        padding: 10px;
+        width: 12vw;
+        height: 17vw;
+        background-color: rgb(232, 232, 232);
         box-sizing: border-box;
     }
-
 
     /*-----------------------------------------*/
 
@@ -1266,26 +1523,37 @@
         top: 0;
         left: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end; /* Alinea la imagen en la parte superior */
         pointer-events: none;
-        z-index: 20; /* Capa encima de otros elementos */
+        z-index: 20;
+        
     }
 
     #Robot {
-
-        height: 10vh;
-        width: 10vh;
+        height: 10vw;
+        width: 10vw;
         margin-bottom: 30px;
         margin-right: 30px;
-        pointer-events: auto;
+        pointer-events: visibleFill;
+        
         background-image: url("robot/1.png");
         background-size: contain; /* Ajusta el tamaño de la imagen para que se ajuste dentro del contenedor */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         background-position: center;
+        animation: RobotMovement 3s ease-in-out infinite; /* Animación infinita de 3 segundos */
+    }
+
+    @keyframes RobotMovement {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px); /* Ajusta la distancia vertical del movimiento */
+        }
     }
 
     /*-----------------------------------------*/
@@ -1307,8 +1575,8 @@
     }
 
     #BackMenu{
-        width: 90vw;
-        height: auto;
+        width: 80vw;
+        max-width: 90vh;
         opacity: 0;
     }
 
@@ -1330,7 +1598,7 @@
         top: 0;
         left: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         display: flex;
         position: fixed;
         justify-content: center;
@@ -1355,6 +1623,4 @@
     }
 
     /*-----------------------------------------*/
-
 }
-
