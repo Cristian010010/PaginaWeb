@@ -19,6 +19,31 @@
 }
 
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CSS general de la página web*/
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'TextoPrincipal', Arial, sans-serif;
+    scrollbar-width: none; /* Oculta el slider en firefox*/
+    -ms-overflow-style: none; /* Oculta el slider en edge*/
+}
+
+
 /*Clases de textos*/
 
 .TransparentTitle{
@@ -38,10 +63,25 @@
 
 #TopSection{
     width: 100%;
-    background-color: #151518;
+    height: 8vh;
+    top: 0;
+    background: rgb(104, 103, 93);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
+    position: fixed;
+    padding: 0 2vw;
+    z-index: 500; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
+    filter: drop-shadow(0px 0px 0.4vh rgb(28, 27, 32));
 }
 
-
+#EmptySpace{
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    background: rgb(153, 147, 82); /*Cambiar para hacer coincidir con el color de fondo */
+}
 
 
 /*-----------------------------------------*/
@@ -70,20 +110,35 @@
 
 /*-----------------------------------------*/
 
-/*Video y descarga*/
+/*Video*/
 
 #MainSection{
     display: flex;
     box-sizing: border-box;
-    align-items: start;
+    align-items: center;
     justify-content: center;
+    width: 100%;
     position: relative;
-    align-items: stretch;
+}
+
+.VideoBoundry{
+    background: rgb(255, 234, 0);
+    height: 50vh;
 }
 
 #VideoSection{
-    width: 70%;
+    height: 50vh;
 }
+
+video {
+    height: 100%; /* Asegura que el video no se extienda más allá del contenedor */
+    width: auto; /* Mantiene la proporción del video */
+}
+
+
+/*-----------------------------------------*/
+
+/*Descarga*/
 
 #DownloadSection{
     width: 30%;
@@ -100,7 +155,9 @@
     text-align: center; /* Alinea el texto dentro del párrafo */
 }
 
-video {
-    width: 100%; /* Asegura que el video no se extienda más allá del contenedor */
-    height: auto; /* Mantiene la proporción del video */
+
+#Relleno{
+    width: 100%;
+    height: 100vh;
+    background: rgb(208, 198, 82);
 }
