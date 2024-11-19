@@ -1,0 +1,106 @@
+/*Fuentes de texto*/
+
+@font-face {
+    font-family: 'TextoPrincipal';
+    src: url('../Fonts/medium/CreatoDisplay-Medium.otf') format('opentype'),
+         url('../Fonts/medium/CreatoDisplay-Medium.woff2') format('woff2'),
+         url('../Fonts/medium/CreatoDisplay-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('../Fonts/Tittles/AkiraExpandedDemo.otf') format('opentype'),
+         url('../Fonts/Tittles/AkiraExpanded-SuperBold.woff2') format('woff2'),
+         url('../Fonts/Tittles/AkiraExpanded-SuperBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Clases de textos*/
+
+.TransparentTitle{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Titulo', Arial, sans-serif;
+    font-size: 3vw;
+    color: transparent;
+    -webkit-text-stroke: 0.15vw #151518; /* Prefijo para navegadores WebKit */
+    line-height: 0.7;
+}
+
+/*-----------------------------------------*/
+
+/*BarraSuperior*/
+
+#TopSection{
+    width: 100%;
+    background-color: #151518;
+}
+
+
+
+
+/*-----------------------------------------*/
+
+/*Titulo*/
+
+#TitleSection{
+    width: 100%;
+    background-color: #151518;
+}
+
+#Title{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    padding-left: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    font-size: 5vw;
+    color: rgb(232, 232, 232);
+    line-height: 0.7;
+}
+
+
+
+/*-----------------------------------------*/
+
+/*Video y descarga*/
+
+#MainSection{
+    display: flex;
+    box-sizing: border-box;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    align-items: stretch;
+}
+
+#VideoSection{
+    width: 70%;
+}
+
+#DownloadSection{
+    width: 30%;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+#DownloadSection p {
+    margin: 5vw 0;
+    text-align: center; /* Alinea el texto dentro del párrafo */
+}
+
+video {
+    width: 100%; /* Asegura que el video no se extienda más allá del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+}

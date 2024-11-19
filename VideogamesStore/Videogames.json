@@ -1,0 +1,34 @@
+{
+    "1": {
+        "title": "Pixie's Adventure",
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+    },
+    "2": {
+        "title": "Veggie Vengeance",
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+    },
+    "3": {
+        "title": "Step By Step",
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+    },
+    "4": {
+        "title": "GameJam",
+        "src": "../Videojuegos/5/GameJamGame.mp4"
+    },
+    "5": {
+        "title": "HungryShark",
+        "src": "../Videojuegos/4/HungryShark.mp4"
+    },
+    "6": {
+        "title": "RuinsOfTime",
+        "src": "../Videojuegos/3/RuinsOfTime.mp4"
+    },
+    "7": {
+        "title": "Insect Jump",
+        "src": "../Videojuegos/2/InsectJump.mp4"
+    },
+    "8": {
+        "title": "Don Chapuzas",
+        "src": "../Videojuegos/1/DonChapuzas.mp4"
+    }
+}

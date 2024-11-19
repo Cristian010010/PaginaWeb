@@ -48,6 +48,10 @@
         display: none;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -682,18 +686,19 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        z-index: -500;
         overflow: auto;
     }
 
     .HiddenGallery{
         position: fixed;
         pointer-events: none;
+        z-index: -500;
     }
 
     .OpenedGallery{
         position: sticky;
         pointer-events: auto;
+        z-index: 0;
     }
 
     /* Contenedor de fondo dentro de la galería */
@@ -851,7 +856,6 @@
 /*Pagina web para movil*/
 @media (max-width: 800px) {
     /*CSS general de la página web*/
-
 
     ::-webkit-scrollbar {
         display: none;
@@ -1492,18 +1496,19 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        z-index: -500;
         overflow: auto;
     }
 
     .HiddenGallery{
         position: fixed;
         pointer-events: none;
+        z-index: -500;
     }
 
     .OpenedGallery{
         position: sticky;
         pointer-events: auto;
+        z-index: 0;
     }
 
     /* Contenedor de fondo dentro de la galería */
