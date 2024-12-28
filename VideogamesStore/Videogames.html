@@ -9,7 +9,15 @@
 <body>
 
     <section id="TopSection">
-
+        <a href="../index.html">
+            <img src="../pictures/Techwear/Logo.png" id = "Logo">
+        </a>
+        <section id="TopMenu">
+            <a href="../index.html">
+                <button>Home</button>
+            </a>
+            <button>Models</button>
+        </section>
     </section>
 
     <section id="EmptySpace"> <!--Mismo tamaño que el TopSection para que la pagina no se vea cortada por la barra superior-->
@@ -22,28 +30,70 @@
     </section> -->
 
     <section id="MainSection">
-        <section class="VideoBoundry"></section>
-
         <section id="VideoSection">
             <video id="Gameplay" width="100%" controls>
                 <source id="VideoSource" src="" type="video/mp4">
                 Tu navegador no soporta el formato de video.
             </video>
         </section>
+    </section>
+    <section id="Information">
+        <section id="GameTitleContent">
+            <p id="Title"></p>
+        </section>
+        <section id="DownloadSection">
+            <p class="TransparentWhiteTitle">Download</p>
+            <p class="TransparentWhiteTitle">Valorate</p>
+        </section>
 
-        <section class="VideoBoundry"></section>
     </section>
 
-    <section id="DownloadSection">
-        <p class="TransparentTitle">Download</p>
-        <p class="TransparentTitle">Valorate</p>
+    <section id="GameDescription">
+        <p class="TransparentTitle">Description</p>
+        <p>Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?</p>
     </section>
 
-    <section id="Relleno">
 
-    </section>
-    
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Comments -->
+
+    <h1>Deja tu comentario</h1>
+
+    <form id="comment-form">
+        <label for="rating">Valoración (1-5):</label>
+        <div class="star-rating">
+        <input type="radio" name="rating" value="1" id="star1">
+        <label for="star1" class="star">&#9733;</label>
+        <input type="radio" name="rating" value="2" id="star2">
+        <label for="star2" class="star">&#9733;</label>
+        <input type="radio" name="rating" value="3" id="star3">
+        <label for="star3" class="star">&#9733;</label>
+        <input type="radio" name="rating" value="4" id="star4">
+        <label for="star4" class="star">&#9733;</label>
+        <input type="radio" name="rating" value="5" id="star5">
+        <label for="star5" class="star">&#9733;</label>
+        </div>
+        <br>
+        <textarea id="comment-text" placeholder="Escribe tu comentario"></textarea>
+        <br>
+        <button id="CommentsButton" type="submit">Enviar Comentario</button>
+    </form>
+
+    <h2>Comentarios:</h2>
+    <div id="comments-list" class="comments-list"></div>
+
+
+    <script type="module" src="../VideogamesStore/Comments/FirebaseModule.js"></script>
     <script src="ScreenSelector.js"></script>
     <script src="VideoLimits.js"></script>
 
