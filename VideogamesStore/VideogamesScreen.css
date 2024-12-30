@@ -70,9 +70,9 @@ body{
 
 /*-----------------------------------------*/
 
-/*BarraSuperior*/
+@media (min-width: 801px) {
 
-#TopSection{
+  #TopSection{
     width: 100%;
     height: 4vw;
     top: 0;
@@ -84,66 +84,61 @@ body{
     padding: 0 2vw;
     z-index: 500; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
     filter: drop-shadow(0px 0px 0.4vh rgb(28, 27, 32));
-}
+  }
 
-#Logo{
-    height: 3vw;
-    align-items: center;
-    box-sizing: border-box;
-    z-index: 500;
-    cursor: pointer;
-}
+  #Logo{
+      height: 3vw;
+      align-items: center;
+      box-sizing: border-box;
+      z-index: 500;
+      cursor: pointer;
+  }
 
-#TopMenu{
-    width: auto;
+  #TopMenu{
+      width: auto;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      margin: 0vw 0vw 0vw 3vw;
+  }
+
+  #TopMenu a{
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    margin: 0vw 0vw 0vw 3vw;
-}
-
-#TopMenu a{
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-}
-
-#TopMenu button{
-    box-sizing: border-box;
-    margin: 0vw 2vw;
-    font-size: 1.2vw;
-    font-family: 'Titulo', Arial, sans-serif;
-    color:rgb(232, 232, 232);
-    border: none;
-    background: none;
-    cursor: pointer;
     text-decoration: none; /* Sin subrayado por defecto */
-    transition: text-decoration 0.3s ease;
-}
+  }
+
+  #TopMenu button{
+      box-sizing: border-box;
+      margin: 0vw 2vw;
+      font-size: 1.2vw;
+      font-family: 'Titulo', Arial, sans-serif;
+      color:rgb(232, 232, 232);
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-decoration: none; /* Sin subrayado por defecto */
+      transition: text-decoration 0.3s ease;
+  }
 
 
-#TopMenu button:hover {
-    text-decoration: underline;
-}
+  #TopMenu button:hover {
+      text-decoration: underline;
+  }
 
-#EmptySpace{
-    width: 100%;
-    height: 4vw;
-    top: 0;
-    background: rgb(153, 147, 82); /*Cambiar para hacer coincidir con el color de fondo */
-}
+  #EmptySpace{
+      width: 100%;
+      height: 4vw;
+      top: 0;
+      background: rgb(153, 147, 82); /*Cambiar para hacer coincidir con el color de fondo */
+  }
 
+  /*-----------------------------------------*/
 
-/*-----------------------------------------*/
+  /*Titulo*/
 
-/*Titulo*/
-
-#TitleSection{
-    width: 100%;
-    background-color: #151518;
-}
-
-#Title{
+  #Title{
     box-sizing: border-box;
     font-family: 'Titulo', Arial, sans-serif;
     font-size: 2vw;
@@ -151,14 +146,11 @@ body{
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: center;
-}
+  }
 
+  /*-----------------------------------------*/
 
-
-/*-----------------------------------------*/
-
-/*Video*/
-@media (min-width: 801px) {
+  /*Video*/
 
   #MainSection{
       display: flex;
@@ -182,9 +174,148 @@ body{
       object-fit: cover;
   }
 
+  /*-----------------------------------------*/
+
+  /*Information*/
+
+  #Information{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(29, 33, 41);
+    position: relative;
+    justify-content: space-between;
+  }
+
+  #GameTitleContent{
+    width: 30%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #DownloadSection{
+    width: auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: right;
+  }
+
+  #DownloadSection p {
+    box-sizing: border-box;
+    margin: 0vw 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+  }
+
+
+  #GameDescription{
+    width: 100%;
+    height: auto;
+    background: rgb(41, 43, 49);
+    padding: 2vw;
+  }
+
+  #DescriptionTitle{
+    padding: 0px 0vw 2vw 5vw;
+  }
+
+  #DescriptionText{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 0px 5vw;
+    font-size: 1.3vw;
+    color:#ffffff;
+  }
+
 }
 
 @media (max-width: 800px) {
+
+  #TopSection{
+    width: 100%;
+    height: 10vw;
+    top: 0;
+    background: rgb(29, 33, 41);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /*Establece el ancho y el alto incluyengo el contenido, el padding y el border*/
+    position: fixed;
+    padding: 0 2vw;
+    z-index: 500; /*Establezco posición 1000 en pantalla para asegurarme de que siempre queda por encima de otros elementos*/
+    filter: drop-shadow(0px 0px 0.4vh rgb(28, 27, 32));
+  }
+
+  #Logo{
+      height: 8vw;
+      align-items: center;
+      box-sizing: border-box;
+      z-index: 500;
+      cursor: pointer;
+  }
+
+  #TopMenu{
+      width: auto;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      margin: 0vw 0vw 0vw 3vw;
+  }
+
+  #TopMenu a{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    text-decoration: none; /* Sin subrayado por defecto */
+  }
+
+  #TopMenu button{
+      box-sizing: border-box;
+      margin: 0vw 4vw;
+      font-size: 3vw;
+      font-family: 'Titulo', Arial, sans-serif;
+      color:rgb(232, 232, 232);
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-decoration: none; /* Sin subrayado por defecto */
+      transition: text-decoration 0.3s ease;
+  }
+
+
+  #TopMenu button:hover {
+      text-decoration: underline;
+  }
+
+  #EmptySpace{
+      width: 100%;
+      height: 10vw;
+      top: 0;
+      background: rgb(153, 147, 82); /*Cambiar para hacer coincidir con el color de fondo */
+  }
+
+  /*-----------------------------------------*/
+
+  /*Titulo*/
+
+  #Title{
+    box-sizing: border-box;
+    font-family: 'Titulo', Arial, sans-serif;
+    font-size: 3vw;
+    color: rgb(232, 232, 232);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  /*-----------------------------------------*/
+
+  /*Video*/
 
   #MainSection{
     display: flex;
@@ -208,53 +339,74 @@ body{
   video {
     object-fit: cover;
   }
-}
 
+  /*-----------------------------------------*/
 
-/*-----------------------------------------*/
+  /*Information*/
 
-/*Information*/
-
-#Information{
+  #Information{
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    height: 5vw;
+    height: 10vw;
     background-color: rgb(29, 33, 41);
     position: relative;
     justify-content: space-between;
-}
+  }
 
-#GameTitleContent{
+  #GameTitleContent{
     width: 30%;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
-}
+  }
 
-#DownloadSection{
+  #DownloadSection{
     width: auto;
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: right;
-}
+  }
 
-#DownloadSection p {
+  #DownloadSection p {
     box-sizing: border-box;
     margin: 0vw 2vw;
-    font-size: 2vw;
+    font-size: 3vw;
     cursor: pointer;
-}
+  }
 
 
-#GameDescription{
+  #GameDescription{
     width: 100%;
     height: auto;
     background: rgb(41, 43, 49);
     padding: 2vw;
+  }
+
+  #DescriptionTitle{
+    padding: 2vw 0vw 6vw 5vw;
+    font-size: 4vw;
+  }
+
+  #DescriptionText{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 0px 5vw;
+    font-size: 3vw;
+    color:#ffffff;
+    padding-bottom: 6vw;
+  }
+  
 }
+
+
+/*-----------------------------------------*/
+
+
 
 
 
