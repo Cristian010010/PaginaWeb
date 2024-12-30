@@ -24,10 +24,6 @@
 
     </section>
 
-    
-    <!--<section id="TitleSection">
-        <p id="Title"></p>
-    </section> -->
 
     <section id="MainSection">
         <section id="VideoSection">
@@ -43,55 +39,47 @@
         </section>
         <section id="DownloadSection">
             <p class="TransparentWhiteTitle">Download</p>
-            <p class="TransparentWhiteTitle">Valorate</p>
+            <p class="TransparentWhiteTitle">Rate</p>
         </section>
 
     </section>
 
     <section id="GameDescription">
         <p class="TransparentWhiteTitle" id="DescriptionTitle">Description</p>
-        <p id="DescriptionText">Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?</p>
+        <p id="DescriptionText"></p>
+
+        <hr>  <!-- Horizontal line to divide parts -->
+
     </section>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Comments -->
 
-    <h1>Deja tu comentario</h1>
 
     <form id="comment-form">
-        <label for="rating">Valoración (1-5):</label>
-        <div class="star-rating">
-        <input type="radio" name="rating" value="1" id="star1">
-        <label for="star1" class="star">&#9733;</label>
-        <input type="radio" name="rating" value="2" id="star2">
-        <label for="star2" class="star">&#9733;</label>
-        <input type="radio" name="rating" value="3" id="star3">
-        <label for="star3" class="star">&#9733;</label>
-        <input type="radio" name="rating" value="4" id="star4">
-        <label for="star4" class="star">&#9733;</label>
-        <input type="radio" name="rating" value="5" id="star5">
-        <label for="star5" class="star">&#9733;</label>
-        </div>
-        <br>
-        <textarea id="comment-text" placeholder="Escribe tu comentario"></textarea>
-        <br>
-        <button id="CommentsButton" type="submit">Enviar Comentario</button>
+        <p>Rate this project</p>
+        <section class="star-rating">
+            <input type="radio" name="rating" value="1" id="star1">
+            <label for="star1" class="star">&#9733;</label>
+            <input type="radio" name="rating" value="2" id="star2">
+            <label for="star2" class="star">&#9733;</label>
+            <input type="radio" name="rating" value="3" id="star3">
+            <label for="star3" class="star">&#9733;</label>
+            <input type="radio" name="rating" value="4" id="star4">
+            <label for="star4" class="star">&#9733;</label>
+            <input type="radio" name="rating" value="5" id="star5">
+            <label for="star5" class="star">&#9733;</label>
+        </section>
+        <textarea id="comment-text" placeholder="Write your comment"></textarea>
+        <button id="CommentsButton" type="submit">Send</button>
     </form>
 
-    <h2>Comentarios:</h2>
-    <div id="comments-list" class="comments-list"></div>
+    <p id="CommentsTitle">Comments</p>
+    <section id="comments-list"></section>
 
+
+
+    <!-- Scripts -->
 
     <script type="module" src="../VideogamesStore/Comments/FirebaseModule.js"></script>
     <script src="ScreenSelector.js"></script>

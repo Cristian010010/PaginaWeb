@@ -211,12 +211,13 @@ body{
     cursor: pointer;
   }
 
+  /*GameDescription*/
 
   #GameDescription{
     width: 100%;
     height: auto;
     background: rgb(41, 43, 49);
-    padding: 2vw;
+    padding-top: 2vw;
   }
 
   #DescriptionTitle{
@@ -230,7 +231,127 @@ body{
     justify-content: center;
     padding: 0px 5vw;
     font-size: 1.3vw;
-    color:#ffffff;
+    color:rgb(232, 232, 232);;
+  }
+
+  /*-----------------------------------------*/
+
+  /*Comments section*/
+
+  hr {
+    width: 80vw; /* Cambia el ancho según lo que necesites */
+    border: 1px solid rgb(232, 232, 232);
+    margin: 4vw auto 0vw auto; /* Centra horizontalmente */
+  }
+
+  #comment-form {
+    width: 100vw;
+    padding: 4vw 5vw 0vw 5vw;
+    background-color: rgb(41, 43, 49);
+  }
+
+  #comment-form p{
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
+    border: none;
+    background: none;
+  }
+
+  .star-rating {
+    display: flex;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+
+  .star-rating input[type="radio"] {
+    display: none;
+  }
+
+  .star-rating label {
+    cursor: pointer;
+    color: gold;
+  }
+
+  .star-rating input[type="radio"]:checked ~ label{
+    color: #ccc;
+  }
+
+  .star-rating input[type="radio"]:checked + label{
+    color: gold; /* Color para la estrella seleccionada */
+  }
+
+  textarea {
+    width: 100%;
+    height: 5vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid rgb(232, 232, 232);
+    margin-bottom: 1vw;
+    resize: vertical;
+  }
+
+  #comment-text{
+    box-sizing: border-box;
+    font-size: 1vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
+    background: rgb(41, 43, 49);
+  }
+
+  #CommentsButton {
+    padding: 0.2vw 0.5vw;
+    background-color: rgb(232, 232, 232);
+    font-size: 1.5vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color: rgb(41, 43, 49);
+    border: none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+  }
+
+  #CommentsButton:hover {
+    background-color: rgb(182, 181, 181);
+  }
+
+  #comments-list {
+    width: 100vw;
+    padding: 2vw 5vw 5vw 5vw;
+    background-color: rgb(41, 43, 49);
+  }
+
+  #CommentsTitle{
+    padding: 2vw 5vw 0vw 5vw;
+    box-sizing: border-box;
+    font-size: 2.5vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
+    border: none;
+    background-color: rgb(41, 43, 49);
+  }
+
+  .comment {
+    background-color: rgb(131, 134, 143);
+    padding: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-radius: 0.3vw;
+  }
+
+  .comment .rating {
+    font-size: 1vw;
+    color: gold;
+  }
+
+  .comment .text {
+    margin-top: 0.2vw;
+    box-sizing: border-box;
+    font-size: 1vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(41, 43, 49);
+    border: none;
+    white-space: normal;
+    word-wrap: break-word;
   }
 
 }
@@ -377,12 +498,13 @@ body{
     cursor: pointer;
   }
 
+   /*GameDescription*/
 
   #GameDescription{
     width: 100%;
     height: auto;
     background: rgb(41, 43, 49);
-    padding: 2vw;
+    padding-top: 2vw;
   }
 
   #DescriptionTitle{
@@ -395,109 +517,129 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
-    padding: 0px 5vw;
+    padding: 0vw 5vw;
+    font-size: 3.2vw;
+    color:rgb(232, 232, 232);
+  }
+
+  /*-----------------------------------------*/
+
+  /*Comments section*/
+
+  hr {
+    width: 80vw; /* Cambia el ancho según lo que necesites */
+    border: 1px solid rgb(232, 232, 232);
+    margin: 4vw auto 0vw auto; /* Centra horizontalmente */
+  }
+
+  #comment-form {
+    width: 100vw;
+    padding: 4vw 5vw 0vw 5vw;
+    background-color: rgb(41, 43, 49);
+  }
+
+  #comment-form p{
+    box-sizing: border-box;
     font-size: 3vw;
-    color:#ffffff;
-    padding-bottom: 6vw;
-  }
-  
-}
-
-
-/*-----------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Comments section*/
-
-#comment-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    resize: vertical;
-  }
-  
-  #CommentsButton {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    background: none;
   }
-  
-  #CommentsButton:hover {
-    background-color: #45a049;
-  }
-  
+
   .star-rating {
     display: flex;
-    gap: 5px;
-    font-size: 2em;
+    font-size: 4vw;
+    margin-bottom: 2vw;
   }
-  
+
   .star-rating input[type="radio"] {
     display: none;
   }
-  
+
   .star-rating label {
     cursor: pointer;
     color: gold;
   }
-  
+
   .star-rating input[type="radio"]:checked ~ label{
     color: #ccc;
   }
-  
+
   .star-rating input[type="radio"]:checked + label{
     color: gold; /* Color para la estrella seleccionada */
   }
-  
-  .comments-list {
-    margin-top: 30px;
+
+  textarea {
+    width: 100%;
+    height: 10vw;
+    padding: 1vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid rgb(232, 232, 232);
+    margin-bottom: 1vw;
+    resize: vertical;
   }
-  
+
+  #comment-text{
+    box-sizing: border-box;
+    font-size: 2vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
+    background: rgb(41, 43, 49);
+  }
+
+  #CommentsButton {
+    padding: 0.4vw 1vw;
+    background-color: rgb(232, 232, 232);
+    font-size: 3vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color: rgb(41, 43, 49);
+    border: none;
+    border-radius: 0.3vw;
+    cursor: pointer;
+  }
+
+  #CommentsButton:hover {
+    background-color: rgb(182, 181, 181);
+  }
+
+  #comments-list {
+    width: 100vw;
+    padding: 4vw 5vw 10vw 5vw;
+    background-color: rgb(41, 43, 49);
+  }
+
+  #CommentsTitle{
+    padding: 4vw 5vw 0vw 5vw;
+    box-sizing: border-box;
+    font-size: 5vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(232, 232, 232);
+    border: none;
+    background-color: rgb(41, 43, 49);
+  }
+
   .comment {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(131, 134, 143);
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 0.3vw;
   }
-  
+
   .comment .rating {
-    font-size: 1.2em;
+    font-size: 2vw;
     color: gold;
   }
-  
+
   .comment .text {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #333;
+    margin-top: 0.4vw;
+    box-sizing: border-box;
+    font-size: 2vw;
+    font-family: 'Titulo', Arial, sans-serif;
+    color:rgb(41, 43, 49);
+    border: none;
+    white-space: normal;
+    word-wrap: break-word;
   }
+  
+}

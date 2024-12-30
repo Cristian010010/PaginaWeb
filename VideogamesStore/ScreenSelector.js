@@ -11,6 +11,7 @@
          if (data[imagenId]) {
              document.getElementById('Title').textContent = data[imagenId].title;
              document.getElementById('VideoSource').src = data[imagenId].src;
+             document.getElementById('DescriptionText').textContent = data[imagenId].description;
              document.getElementById('Gameplay').load(); // Carga el nuevo video
          } else {
             /*

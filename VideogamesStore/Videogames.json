@@ -1,34 +1,42 @@
 {
     "1": {
         "title": "Pixie's Adventure",
-        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "2": {
         "title": "Veggie Vengeance",
-        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "3": {
         "title": "Step By Step",
-        "src": "../Videojuegos/7/TrailerStepByStep.mp4"
+        "src": "../Videojuegos/7/TrailerStepByStep.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "4": {
         "title": "GameJam",
-        "src": "../Videojuegos/5/GameJamGame.mp4"
+        "src": "../Videojuegos/5/GameJamGame.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "5": {
         "title": "HungryShark",
-        "src": "../Videojuegos/4/HungryShark.mp4"
+        "src": "../Videojuegos/4/HungryShark.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "6": {
         "title": "RuinsOfTime",
-        "src": "../Videojuegos/3/RuinsOfTime.mp4"
+        "src": "../Videojuegos/3/RuinsOfTime.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "7": {
         "title": "Insect Jump",
-        "src": "../Videojuegos/2/InsectJump.mp4"
+        "src": "../Videojuegos/2/InsectJump.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     },
     "8": {
         "title": "Don Chapuzas",
-        "src": "../Videojuegos/1/DonChapuzas.mp4"
+        "src": "../Videojuegos/1/DonChapuzas.mp4",
+        "description": "Embark on an unforgettable adventure in this thrilling [genre] game! Explore stunning worlds, engage in intense battles, and uncover a deep, immersive story. Customize your character, master unique abilities, and shape the fate of the world with your choices. With breathtaking graphics, dynamic gameplay, and endless challenges, [Game Title] offers hours of entertainment for players of all levels. Are you ready to become the hero this world needs?"
     }
 }
