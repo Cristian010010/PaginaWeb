@@ -1518,14 +1518,15 @@
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        gap: 2vw;
+        gap: 4vw;
         margin-top: 15vw;
     }
 
     /* Sección para mostrar un videojuego */
     .VideogameSection {
-        width: 12vw;
-        height: 17vw;
+        width: 36vw;
+        height: 51vw;
+        margin-bottom: 10vw;
         background-color: rgb(232, 232, 232);
         box-sizing: border-box;
     }

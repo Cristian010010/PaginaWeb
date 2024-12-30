@@ -41,6 +41,7 @@ body{
     font-family: 'TextoPrincipal', Arial, sans-serif;
     scrollbar-width: none; /* Oculta el slider en firefox*/
     -ms-overflow-style: none; /* Oculta el slider en edge*/
+    background: rgb(41, 43, 49);
 }
 
 
