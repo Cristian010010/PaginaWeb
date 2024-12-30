@@ -712,12 +712,29 @@
         margin-top: 15vw;
     }
 
+    #BackGallery a{
+        text-decoration: none;
+    }
+
     /* Sección para mostrar un videojuego */
     .VideogameSection {
         width: 12vw;
         height: 17vw;
         background-color: rgb(232, 232, 232);
         box-sizing: border-box;
+        margin-bottom: 1vw;
+    }
+
+    .VideogameSectionName {
+        width: 12vw;
+        height: auto;
+        margin-bottom: 3vw;
+        box-sizing: border-box;
+        font-size: 1.4vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        color:rgb(232, 232, 232);
+        border: none;
+        text-align: center;
     }
 
     /*-----------------------------------------*/
@@ -1522,13 +1539,29 @@
         margin-top: 15vw;
     }
 
+    #BackGallery a{
+        text-decoration: none;
+    }
+
     /* Sección para mostrar un videojuego */
     .VideogameSection {
         width: 36vw;
         height: 51vw;
-        margin-bottom: 10vw;
         background-color: rgb(232, 232, 232);
         box-sizing: border-box;
+        margin-bottom: 1vw;
+    }
+
+    .VideogameSectionName {
+        width: 36vw;
+        height: auto;
+        margin-bottom: 10vw;
+        box-sizing: border-box;
+        font-size: 4vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        color:rgb(232, 232, 232);
+        border: none;
+        text-align: center;
     }
 
     /*-----------------------------------------*/
