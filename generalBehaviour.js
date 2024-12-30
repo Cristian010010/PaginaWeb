@@ -36,6 +36,55 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+//Pasamos la pulsacion a las capas inferiores para detectar si estamos pulsando encima de un videojuego antes de que la seccion superior se haya cerrado del todo
+
+document.getElementById('EmptyWindow').addEventListener('click', (e) => {
+    const clickEvent = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        clientX: e.clientX, // Mantener la posición del clic
+        clientY: e.clientY
+    });
+
+    document.getElementById('BackGallery').dispatchEvent(clickEvent);
+});
+
+document.getElementById('BackGallery').addEventListener('click', (e) => {
+    const container = document.querySelector('#BackGallery');
+    const clickX = e.clientX;
+    const clickY = e.clientY;
+
+    // Obtener todos los enlaces <a> dentro de #BackGallery
+    const links = container.querySelectorAll('a');
+
+    // Verificar si el clic ocurrió dentro de alguno de los enlaces
+    for (let link of links) {
+        const rect = link.getBoundingClientRect();  // Obtener las dimensiones del enlace
+
+        // Comprobar si las coordenadas del clic están dentro de las dimensiones del enlace
+        if (clickX >= rect.left && clickX <= rect.right && clickY >= rect.top && clickY <= rect.bottom) {
+            // Si el clic está dentro de un enlace, redirigir el clic al enlace
+            console.log("Clic dentro del enlace:", link);
+            link.dispatchEvent(new MouseEvent('click', {
+                bubbles: true,
+                cancelable: true,
+                clientX: clickX,
+                clientY: clickY
+            }));
+            return;  // Salir del bucle después de hacer clic en el enlace
+        }
+    }
+
+    // Si el clic no fue dentro de ningún enlace
+    console.log("Clic fuera de los enlaces");
+});
+
+
+
+
+
 //DETECCIÓN DE SCROLL, LO MÁS SIMILAR A UN UPDATE
 
 window.addEventListener('scroll', function() {

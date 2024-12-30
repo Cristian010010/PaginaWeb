@@ -654,7 +654,6 @@
         box-sizing: border-box;
         background-color: rgba(255, 255, 255, 0);
         display: flex;
-        pointer-events: none;
         position: relative;
     }
 
@@ -691,13 +690,11 @@
 
     .HiddenGallery{
         position: fixed;
-        pointer-events: none;
         z-index: -500;
     }
 
     .OpenedGallery{
         position: sticky;
-        pointer-events: auto;
         z-index: 0;
     }
 
@@ -1481,7 +1478,6 @@
         box-sizing: border-box;
         background-color: rgba(255, 255, 255, 0);
         display: flex;
-        pointer-events: none;
         position: relative;
     }
 
@@ -1518,13 +1514,11 @@
 
     .HiddenGallery{
         position: fixed;
-        pointer-events: none;
         z-index: -500;
     }
 
     .OpenedGallery{
         position: sticky;
-        pointer-events: auto;
         z-index: 0;
     }
 
