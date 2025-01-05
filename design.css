@@ -612,36 +612,81 @@
     #ContactSection{
         box-sizing: border-box;
         background: rgb(232, 232, 232);
-        height: 80vh;
         width: 100vw;
         left: 0;
-        transition: top 1s ease;
+        top: 0;
         position: fixed;
         display: flex;
-        justify-content: end;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
         z-index: 100;
         box-shadow: 0 0 2vh rgba(0, 0, 0, 1);
-    }
-
-            /* Ocultar sección */
-    .ContactoOculto{
-        pointer-events: none; /*Cuidado! Esto hace que no se detecte nada de lo que suceda dentro*/
-        top: -90vh;
-    }
-
-    .ContactoVisible{
-        pointer-events: auto;
-        top: 10vh;
+        transition: top 0.5s ease;
     }
 
     .CloseButton{
+        position: absolute;
+        right: 1vw;
+        top: 1vw;
+        width: 3vw;
+        cursor: pointer;
+    }
+
+    #ContactInformation{
         display: flex;
-        align-items: start;
-        justify-content: start;
-        margin-right: 1vw;
-        margin-top: 1vw;
-        width: 4vh; /* Ancho deseado del botón */
+        align-items: flex-end; 
+        justify-content: center;
+        height: 90%;
+        width: 80%;
+    }
+
+    #ContactLogo{
+        width: 50%;
+        padding: 2vw 0vw;
+    }
+
+    #Info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start; 
+    }
+
+    #Info1{
+        box-sizing: border-box;
+        font-size: 2.6vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        color:#151518;
+        border: none;
+        background: none;
+        margin: 0vw;
+    }
+
+    #Info2{
+        box-sizing: border-box;
+        font-family: 'Titulo', Arial, sans-serif;
+        font-size: 5vw;
+        color: transparent;
+        -webkit-text-stroke: 0.15vw #151518; /* Prefijo para navegadores WebKit */
+        line-height: 0.7;
+        padding-bottom: 6vw;
+    }
+
+    #ContactIcons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 3vw;
+    }
+
+    #ContactIcons img{
+        width: 6vw;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
     }
 
     /*-----------------------------------------*/
@@ -1433,40 +1478,89 @@
 
     /*Sección de contacto*/
 
-    #ContactSection{
+     /*Sección de contacto*/
+
+     #ContactSection{
         box-sizing: border-box;
         background: rgb(232, 232, 232);
-        height: 80vh;
         width: 100vw;
         left: 0;
-        transition: top 1s ease;
+        top: 0;
         position: fixed;
         display: flex;
-        justify-content: end;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
         z-index: 100;
         box-shadow: 0 0 2vh rgba(0, 0, 0, 1);
-    }
-
-            /* Ocultar sección */
-    .ContactoOculto{
-        pointer-events: none; /*Cuidado! Esto hace que no se detecte nada de lo que suceda dentro*/
-        top: -90vh;
-    }
-
-    .ContactoVisible{
-        pointer-events: auto;
-        top: 10vh;
+        transition: top 0.5s ease;
     }
 
     .CloseButton{
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        margin-right: 1vw;
-        margin-top: 1vw;
-        width: 4vh; /* Ancho deseado del botón */
+        position: absolute;
+        right: 1vw;
+        top: 1vw;
+        width: 3vw;
+        cursor: pointer;
     }
+
+    #ContactInformation{
+        display: flex;
+        align-items: flex-end; 
+        justify-content: center;
+        height: 90%;
+        width: 80%;
+    }
+
+    #ContactLogo{
+        width: 50%;
+        padding: 2vw 0vw;
+    }
+
+    #Info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start; 
+    }
+
+    #Info1{
+        box-sizing: border-box;
+        font-size: 2.6vw;
+        font-family: 'Titulo', Arial, sans-serif;
+        color:#151518;
+        border: none;
+        background: none;
+        margin: 0vw;
+    }
+
+    #Info2{
+        box-sizing: border-box;
+        font-family: 'Titulo', Arial, sans-serif;
+        font-size: 5vw;
+        color: transparent;
+        -webkit-text-stroke: 0.15vw #151518; /* Prefijo para navegadores WebKit */
+        line-height: 0.7;
+        padding-bottom: 6vw;
+    }
+
+    #ContactIcons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-bottom: 3vw;
+    }
+
+    #ContactIcons img{
+        width: 6vw;
+        height: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    /*-----------------------------------------*/
 
     /*-----------------------------------------*/
 

@@ -10,6 +10,11 @@ const AnimationsSection = document.getElementById('AnimationWindow');
 const Gallery = document.getElementById('Gallery');
 
 
+//Variables
+
+let sectionHeight, viewportHeight, topOculto, topVisible, TopVisibleCheck;
+
+
 //Animación desvanecimiento de fondo inicial (tanto fondo como logo)
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -92,36 +97,57 @@ window.addEventListener('scroll', function() {
 });
 
 
-// Hacemos visible la sección de contacto
+//----------------------------------------------------------------------------------------------------------------------------------------
 
-ContactButton.addEventListener('click', function(e) {
+// Detectamos en todo momento cual es el centro de la pantalla para la seccion de contacto teniendo en cuenta su altura dinamica
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+// Función para calcular posiciones
+function calcularPosiciones() {
+    TopVisibleCheck = topVisible;
+
+    sectionHeight = ContactSection.offsetHeight;
+    viewportHeight = window.innerHeight;
+
+    topOculto = -sectionHeight + 'px';
+    topVisible = ((viewportHeight - sectionHeight) / 2) + 'px';
+
+    if(ContactSection.style.top === TopVisibleCheck){ //Aseguramos que escale cuando la sección está abierta y se redimensiona la pantalla
+        ContactSection.style.top = topVisible;
+    }
+}
+
+// Esperamos a que cargue la página
+window.addEventListener('load', function () {
+    if (!ContactSection || !ContactButton) {
+        console.error('No se encontraron los elementos necesarios en el DOM.');
+        return;
+    }
+
+    calcularPosiciones();
+
+    // Establecer el top inicial a oculto
+    ContactSection.style.top = topOculto;
+});
+
+// Actualizamos las posiciones en cada redimensionamiento
+window.addEventListener('resize', calcularPosiciones);
+
+// Agregamos el evento al botón
+ContactButton.addEventListener('click', function (e) {
     e.preventDefault(); // Evitar el comportamiento por defecto del enlace
 
-    // Mostrar la sección final
-    //ContactSection.style.opacity = '1';
-    //ContactSection.style.pointerEvents = 'auto'; // Permitir interacción con la sección
-
-    ContactSection.classList.toggle('ContactoOculto');
-    ContactSection.classList.toggle('ContactoVisible');
-    
-    
-
-    /*
-    // Desplazar la página hacia abajo para mostrar la sección final
-    window.scrollTo({
-        top: ContactSection.offsetTop,
-        behavior: 'smooth'
-    });
-    */
-
-    //Tiempo hasta que se comprueba si la sección está oculta, este tiempo se utiliza para que no detecte que no se vé en pantalla antes de terminar el scroll
-    /*
-    setTimeout(() => {
-        CheckVisibility(ContactSection);
-    }, 3000); // Ajusta el tiempo de retraso según sea necesario
-    */
-
+    if (ContactSection.style.top === topOculto) {
+        ContactSection.style.top = topVisible; // Muestra la sección centrada
+    } else {
+        ContactSection.style.top = topOculto; // Oculta la sección
+    }
 });
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------------------------------------------
 
 //Comprobamos si la sección sigue siendo visible
 
@@ -186,8 +212,7 @@ function descargarArchivo() {
 //Cerrar secciones
 
 function ContactClose() {
-    ContactSection.classList.remove('ContactoVisible');
-    ContactSection.classList.add('ContactoOculto');
+    ContactButton.click();
 }
 
 
