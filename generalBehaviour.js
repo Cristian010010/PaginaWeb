@@ -192,12 +192,12 @@ function GalleryIsUsed(){
 
 function descargarArchivo() {
     // URL del archivo que deseas descargar
-    const url = 'cv/Curriculum.jpg'; // Cambia la ruta a tu archivo
+    const url = 'cv/CV.pdf'; // Cambia la ruta a tu archivo
 
     // Crear un enlace invisible
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Curriculum.jpg'; // Nombre del archivo a descargar
+    link.download = 'CV_CristianHernándezDelgado.pdf'; // Nombre del archivo a descargar
 
     // Agregar el enlace al cuerpo del documento
     document.body.appendChild(link);
